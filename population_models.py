@@ -10,7 +10,7 @@ Each model uses numerical methods to solve differential equations.
 """
 
 import numpy as np
-from typing import Callable, Tuple, List
+from typing import Callable, Tuple, List, Union
 
 
 class NumericalSolver:
@@ -300,7 +300,7 @@ class PredatorPreyModel:
         return solution[:, 0], solution[:, 1]
 
 
-def compare_numerical_methods(model, N0: float, t: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+def compare_numerical_methods(model: Union[ExponentialGrowth, LogisticGrowth], N0: float, t: np.ndarray) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Compare Euler and RK4 methods with analytical solution (if available).
     
