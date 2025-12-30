@@ -30,6 +30,11 @@ wheels/
 *.pdf
 *.svg
 
+# Exclude screenshots directory from ignore (for README documentation)
+!screenshots/*.png
+!screenshots/*.jpg
+!screenshots/*.jpeg
+
 # IDE
 .vscode/
 .idea/

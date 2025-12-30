@@ -118,6 +118,43 @@ prey, predator = model.solve(N0, P0, t)
 plot_predator_prey(t, prey, predator)
 ```
 
+## Example Visualizations
+
+When you run `python main.py`, the program generates comprehensive visualizations of all population growth models. Here's what you can expect to see:
+
+### Comprehensive Overview
+
+The program creates a comprehensive report showing all three models in one view:
+
+![Comprehensive Report](screenshots/comprehensive_report.png)
+
+This overview includes:
+- **Top Left**: Exponential growth showing unbounded population increase
+- **Top Right**: Logistic growth with the characteristic S-curve approaching carrying capacity
+- **Bottom Left**: Predator-prey dynamics showing oscillating populations over time
+- **Bottom Right**: Phase space diagram showing the cyclical relationship between predators and prey
+
+### Individual Model Outputs
+
+#### Exponential Growth
+![Exponential Growth](screenshots/exponential_growth.png)
+
+Shows the characteristic exponential increase in population over time when resources are unlimited.
+
+#### Logistic Growth
+![Logistic Growth](screenshots/logistic_growth.png)
+
+Demonstrates how populations grow rapidly at first but slow down as they approach the carrying capacity (shown as the red dashed line).
+
+#### Predator-Prey Dynamics
+![Predator-Prey Dynamics](screenshots/predator_prey.png)
+
+Illustrates the classic Lotka-Volterra dynamics:
+- **Top panel**: Time series showing how prey and predator populations oscillate over time
+- **Bottom panel**: Phase space showing the cyclical trajectory with start (green) and end (red) points
+
+All visualizations are saved as high-resolution PNG files in your working directory.
+
 ## Mathematical Models
 
 ### 1. Exponential Growth
